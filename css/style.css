@@ -46,3 +46,10 @@ nav a {
 nav a:hover {  
     opacity: 0.7;  
 }
+
+.hero {
+    background: linear-gradient(134deg, rgb(115, 226, 253) 0%, rgb(28, 100, 168) 100%);
+    text-align: center;
+    padding: 120px 20px;
+    overflow: hidden; 
+}
