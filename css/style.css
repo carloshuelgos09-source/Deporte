@@ -9,13 +9,17 @@ body {
     background-color: #adc0cc;
     color: #ffffff;
     line-height: 1.6;
+   
 }
 
 header {
     background: linear-gradient(135deg, #2162b8 0%, #4884a1 100%);
-    color: #fff6f6;
+    color: #fff;
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+     position: sticky;
+    z-index: 1000; 
+    top: 0;
 }
 
 nav {
@@ -37,10 +41,10 @@ nav ul {
 }
 
 nav a {
-    color: #fff6f6;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s;
 }
 
 nav a:hover {
@@ -48,7 +52,7 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(134deg, rgb(115, 226, 253) 0%, rgb(28, 100, 168) 100%);
+    background: linear-gradient(134deg, rgb(115, 226, 253), rgb(28, 100, 168));
     text-align: center;
     padding: 120px 20px;
 }
@@ -61,23 +65,115 @@ nav a:hover {
 
 .hero-content p {
     font-size: 1.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .btn-primary {
     background: white;
     color: #1a82eb;
     padding: 18px 50px;
-    display: inline-block;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 800;
-    font-size: 1.1rem;
     transition: 0.3s;
 }
 
 .btn-primary:hover {
     background: #1a82eb;
     color: white;
-    transform: translateY(-5px) scale(0.98);
+    transform: translateY(-5px);
 }
+
+
+.productos-section {
+    padding: 80px 20px;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+
+.product-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.titulo-deporte {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.titulo-deporte h3 {
+    margin: 0;
+}
+
+.product-card h4,
+.product-card p {
+    padding: 0 20px;
+}
+
+.product-card h4 {
+    margin: 15px 0 10px;
+    color: #000000;
+}
+
+.product-card p {
+    margin-bottom: 12px;
+}
+
+
+.futbol-card .titulo-deporte {
+    background: linear-gradient(135deg, #1461d4, #b2d80b);
+}
+
+.baloncesto-card .titulo-deporte {
+    background: linear-gradient(135deg, #ff7b00, #ffb347);
+}
+
+.tenis-card .titulo-deporte {
+    background: linear-gradient(135deg, #7bc043, #c4f000);
+}
+
+.natacion-card .titulo-deporte {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+}
+
+.atletismo-card .titulo-deporte {
+    background: linear-gradient(135deg, #000e01, #f1f1f1);
+}
+
+.ciclismo-card .titulo-deporte {
+    background: linear-gradient(135deg, #6a4c93, #b185db);
+}
+
+
