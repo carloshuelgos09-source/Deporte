@@ -175,5 +175,24 @@ nav a:hover {
 .ciclismo-card .titulo-deporte {
     background: linear-gradient(135deg, #6a4c93, #b185db);
 }
+.estadistica-section{
+    background: linear-gradient(135deg, #359ce0, #72daec);
+    color: white;
+    padding: 60px 20px;
+    justify-items: center;
+
+}
+.estadistica-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.estadistica-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+
 
 
