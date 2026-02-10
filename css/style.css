@@ -191,6 +191,13 @@ nav a:hover {
     max-width: 600px;
     margin: auto;
 }
+.estadistica-section .estadistica-container {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
 
 
 
